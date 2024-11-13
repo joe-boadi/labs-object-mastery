@@ -44,8 +44,9 @@ function createTimer(duration, elementId){
    const durationTimer = setInterval(()=>{
     let timer = document.getElementById(`${elementId}`)
     //Access argument duration with the this keyword
-    this.duration = duration    
-    duration--
+    this.duration = duration
+
+    duration-- //decrease duration by 1
         timer.textContent = duration
         if(duration === 0) {
             clearInterval(durationTimer) // keep interval at 0
