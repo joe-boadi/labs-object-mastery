@@ -40,12 +40,11 @@ function createCounter() {
 }
 
 function createTimer(duration, elementId){
+    this.duration = duration
     // setInterval as closure to createTimer
    const durationTimer = setInterval(()=>{
     let timer = document.getElementById(`${elementId}`)
     //Access argument duration with the this keyword
-    this.duration = duration
-
     duration-- //decrease duration by 1
         timer.textContent = duration
         if(duration === 0) {
@@ -54,6 +53,5 @@ function createTimer(duration, elementId){
         }
     }, 1000) // decrease duration at every 1sec
 }
-
 createTimer(10,"timer")
 
