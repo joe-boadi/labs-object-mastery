@@ -1,0 +1,49 @@
+body {
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: monospace;
+}
+
+.btn {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-content: center;
+    cursor: pointer;
+    transition: .3s;
+    border-radius: 5px;
+    background-color: black;
+    color: aliceblue;
+    font-size: 16px;
+    border: 2px solid ;
+    width: 100px;
+    padding: 14px 40px;
+    font-family: monospace;
+
+    &:hover{
+        background-color: whitesmoke;
+        color: black;
+        border:2px solid black;
+        font-size: 17px;
+    }
+}
+
+#timer{
+    font-size: 50px;
+    font-weight: 400;
+    text-decoration: underline
+}
+
+#countDown p{
+   font-size: 20px;
+}
+
+#countDown #digit{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+ }
+
